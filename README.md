@@ -1,6 +1,6 @@
 # ATSAutomation
 
-Private, sanitized preservation of the ATS/RAG job-assistant research, architecture, prompts, and early SerpAPI prototypes developed under `C:\ATS`.
+AI-powered ATS automation research and a private, sanitized preservation of the ATS/RAG job-assistant architecture, prompts, and early SerpAPI prototypes developed under `C:\ATS`.
 
 ## Repository contents
 
