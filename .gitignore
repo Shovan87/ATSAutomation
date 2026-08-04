@@ -18,6 +18,7 @@ artifacts/
 logs/
 *.log
 *.csv
+!additional-research/market/dba-2026/aggregate-data.csv
 *.json
 *.db
 *.sqlite*

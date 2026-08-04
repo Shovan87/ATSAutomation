@@ -1,6 +1,6 @@
 # ATSAutomation
 
-AI-powered ATS automation research and a private, sanitized preservation of the ATS/RAG job-assistant architecture, prompts, and early SerpAPI prototypes developed under `C:\ATS`.
+AI-powered ATS automation research and a private, sanitized preservation of the ATS/RAG job-assistant architecture, prompts, and early SerpAPI prototypes developed in a separate local source workspace.
 
 ## Repository contents
 
@@ -14,18 +14,22 @@ AI-powered ATS automation research and a private, sanitized preservation of the 
 
 The canonical design is `docs/00-START-HERE.md`. Earlier artifacts may describe superseded choices and are retained as research history, not current implementation authority.
 
+## Additional research
+
+[`additional-research/README.md`](additional-research/README.md) contains independently reviewed supplemental research on database internals, migration, prompt engineering, and the DBA market. This package is version-sensitive and is **not part of the canonical ATS/RAG design or implementation baseline**.
+
 ## Privacy and publication scope
 
 This repository intentionally excludes:
 
 - resumes, cover letters, application drafts, and extracted resume text;
 - personal contact details and candidate-specific generated content;
-- DOCX, PDF, HTML, CSV, JSON payload, log, backup, and cache artifacts;
+- DOCX, PDF, HTML, raw CSV/JSON payload, log, backup, and cache artifacts; the sanitized aggregate market-research CSV is the sole intentional CSV exception;
 - local tool settings and temporary files;
 - hardcoded credentials, private endpoints, and internal URLs;
 - SQL files requiring a separate provenance and confidentiality review.
 
-The original `C:\ATS` workspace is not modified by this migration.
+The original source workspace is not modified by this migration.
 
 ## Prototype setup
 
@@ -42,7 +46,7 @@ python .\google_jobs_scraper_FIXED.py
 Generated job data is written to the ignored `data/` directory. Override it with `ATS_DATA_DIR`:
 
 ```powershell
-$env:ATS_DATA_DIR = 'C:\private\ats-data'
+$env:ATS_DATA_DIR = '<private-data-directory>'
 ```
 
 Do not commit `.env` files, API responses, job exports, resumes, or candidate data.
